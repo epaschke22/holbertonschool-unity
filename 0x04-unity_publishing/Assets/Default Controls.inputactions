@@ -135,6 +135,17 @@
                 },
                 {
                     "name": "",
+                    "id": "34daaf48-29cb-43ee-9ca6-030fbe729890",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlayerMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "1c5cd715-3146-4bf2-abad-6259c4f01ba0",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
