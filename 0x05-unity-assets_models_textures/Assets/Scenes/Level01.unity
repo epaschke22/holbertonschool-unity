@@ -336,7 +336,6 @@ Transform:
   - {fileID: 976439316}
   - {fileID: 582860057}
   - {fileID: 761581586}
-  - {fileID: 1494974887}
   - {fileID: 983178693}
   - {fileID: 685840538}
   - {fileID: 1456868960}
@@ -353,6 +352,7 @@ Transform:
   - {fileID: 667744513}
   - {fileID: 498847139}
   - {fileID: 479687691}
+  - {fileID: 1494974887}
   - {fileID: 564433773}
   - {fileID: 1814043336}
   - {fileID: 161049210}
@@ -388,10 +388,10 @@ Transform:
   - {fileID: 1740705369}
   - {fileID: 1445390009}
   - {fileID: 217714598}
-  - {fileID: 1293137379}
   - {fileID: 261767500}
   - {fileID: 2081626114}
   - {fileID: 431853017}
+  - {fileID: 1293137379}
   - {fileID: 439259832}
   - {fileID: 1807012805}
   - {fileID: 775513488}
@@ -5796,7 +5796,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658528115}
-  m_LocalRotation: {x: 0.11857609, y: 0.000000008277739, z: -0.0000000023439144, w: 0.992945}
+  m_LocalRotation: {x: 0.11857609, y: -0.000000008277738, z: 0.0000000023439135, w: 0.992945}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -8507,7 +8507,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.16776298, y: 0.0000000048266116, z: 8.2153245e-10, w: 0.9858274}
+  m_LocalRotation: {x: 0.16776298, y: -0.000000004826611, z: -8.2153306e-10, w: 0.9858274}
   m_LocalPosition: {x: 0, y: 6.25, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -9306,7 +9306,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1075890413}
-  m_LocalRotation: {x: 0.06133674, y: -0.000000016797449, z: 0.000000003728994, w: 0.9981172}
+  m_LocalRotation: {x: 0.06133674, y: 0.000000016797442, z: -0.0000000037289927, w: 0.9981172}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10736,7 +10736,7 @@ MonoBehaviour:
   m_XAxis:
     Value: 0
     m_SpeedMode: 0
-    m_MaxSpeed: 600
+    m_MaxSpeed: 450
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
