@@ -10,10 +10,12 @@ public class Timer : MonoBehaviour
 
     public bool timerOn = false;
 
+    public GameObject winMenu;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        winMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -30,10 +32,11 @@ public class Timer : MonoBehaviour
         }
     }
 
-    public void TimerEnd()
+    public void Win()
 	{
         timerOn = false;
-        timerText.fontSize = 60;
-        timerText.color = Color.green;
+        winMenu.SetActive(true);
+        winMenu.transform.GetChild(3).GetComponent<Text>().text = timerText.text;
+        timerText.enabled = false;
     }
 }

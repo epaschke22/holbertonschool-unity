@@ -17,7 +17,7 @@ public class FlagTrigger : MonoBehaviour
 	{
 		if (other.tag == "Player")
 		{
-			timerRef.TimerEnd();
+			timerRef.Win();
 		}
 	}
 }
