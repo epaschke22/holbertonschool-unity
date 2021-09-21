@@ -12,6 +12,17 @@ public class WinMenu : MonoBehaviour
 
     public void Next()
     {
-        SceneManager.LoadScene("MainMenu");
+        if (SceneManager.GetActiveScene().name == "Level01")
+		{
+            SceneManager.LoadScene("Level02");
+        }
+        else if (SceneManager.GetActiveScene().name == "Level02")
+        {
+            SceneManager.LoadScene("Level03");
+        }
+        else
+		{
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 }

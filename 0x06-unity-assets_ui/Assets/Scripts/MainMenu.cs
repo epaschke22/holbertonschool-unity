@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public static string previousSceneName = "MainMenu";
 
     public void LevelSelect(int level)
     {
@@ -13,6 +14,7 @@ public class MainMenu : MonoBehaviour
 
     public void Options()
 	{
+        previousSceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("Options");
     }
 

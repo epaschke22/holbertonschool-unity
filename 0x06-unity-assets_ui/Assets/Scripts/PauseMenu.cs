@@ -42,13 +42,14 @@ public class PauseMenu : MonoBehaviour
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
 
-	public void MainMenu()
+	public void Mainmenu()
 	{
 		SceneManager.LoadScene("MainMenu");
 	}
 
 	public void Options()
 	{
+		MainMenu.previousSceneName = SceneManager.GetActiveScene().name;
 		SceneManager.LoadScene("Options");
 	}
 }

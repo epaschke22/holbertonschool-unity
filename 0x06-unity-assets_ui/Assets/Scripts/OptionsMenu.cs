@@ -23,7 +23,7 @@ public class OptionsMenu : MonoBehaviour
 
 	public void Back()
 	{
-		SceneManager.LoadScene("MainMenu");
+		SceneManager.LoadScene(MainMenu.previousSceneName);
 	}
 
 	public void Apply()
