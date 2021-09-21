@@ -5,6 +5,7 @@ using Cinemachine;
 
 public class CameraController : MonoBehaviour
 {
+    public bool isInverted;
     public CinemachineFreeLook mainCam;
 
     // Start is called before the first frame update
