@@ -5782,7 +5782,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658528115}
-  m_LocalRotation: {x: 0.11857609, y: 0.000000008277739, z: -0.0000000023439144, w: 0.992945}
+  m_LocalRotation: {x: 0.11857609, y: -0.000000008277738, z: 0.0000000023439135, w: 0.992945}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -8463,7 +8463,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.16776298, y: 0.0000000048266116, z: 8.2153245e-10, w: 0.9858274}
+  m_LocalRotation: {x: 0.16776298, y: -0.000000004826611, z: -8.2153306e-10, w: 0.9858274}
   m_LocalPosition: {x: 0, y: 6.25, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -9262,7 +9262,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1075890413}
-  m_LocalRotation: {x: 0.06133674, y: -0.000000016797449, z: 0.000000003728994, w: 0.9981172}
+  m_LocalRotation: {x: 0.06133674, y: 0.000000016797442, z: -0.0000000037289927, w: 0.9981172}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10623,6 +10623,7 @@ GameObject:
   - component: {fileID: 1266942058}
   - component: {fileID: 1266942057}
   - component: {fileID: 1266942059}
+  - component: {fileID: 1266942061}
   m_Layer: 0
   m_Name: Third Person Freelook Camera
   m_TagString: Untagged
@@ -10778,6 +10779,19 @@ MonoBehaviour:
   m_Damping: 0
   m_DampingWhenOccluded: 0
   m_OptimalTargetDistance: 0
+--- !u!114 &1266942061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266942056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6b8e64889b46eb40ab8f07e223932cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCam: {fileID: 1266942057}
 --- !u!1001 &1266974917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16300,6 +16314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6b8e64889b46eb40ab8f07e223932cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCam: {fileID: 1266942057}
 --- !u!1001 &1835424404
 PrefabInstance:
   m_ObjectHideFlags: 0
