@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
 		{
             velocity.y = -2f;
 		}
+        playerAnimator.SetBool("IsGrounded", isGrounded);
 
         if (canMove)
 		{
@@ -38,7 +39,7 @@ public class PlayerController : MonoBehaviour
             Vector3 direction = new Vector3(horizontal, 0, vertical).normalized;
 
             playerAnimator.SetFloat("Speed", direction.magnitude);
-            playerAnimator.SetBool("IsGrounded", isGrounded);
+
 
             if (direction.magnitude >= 0.1f)
             {
