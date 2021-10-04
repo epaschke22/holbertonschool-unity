@@ -2330,7 +2330,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 5470122615206496354}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 305455619}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6467f17382e4fb74abce0efba222c910, type: 3}
   m_Name: 
@@ -4023,11 +4023,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 0779e5d1277806848b714d6a6f32c6c6, type: 3}
---- !u!95 &467488804 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1910460967706892644, guid: 3b76e24feb360274daac6c61677488fa, type: 3}
-  m_PrefabInstance: {fileID: 5470122615206496354}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &479687690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19348,10 +19343,6 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 963194228}
-    - target: {fileID: 5750136490843263631, guid: 3b76e24feb360274daac6c61677488fa, type: 3}
-      propertyPath: playerAnimator
-      value: 
-      objectReference: {fileID: 467488804}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b76e24feb360274daac6c61677488fa, type: 3}
 --- !u!4 &5470122615206496355 stripped

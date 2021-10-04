@@ -99,11 +99,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4529611014314642703}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6467f17382e4fb74abce0efba222c910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimator: {fileID: 1910460967706892644}
   controller: {fileID: 6224513658665159615}
   cam: {fileID: 0}
   speed: 6
@@ -115,6 +116,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   turnSmoothTime: 0.1
+  canMove: 0
 --- !u!114 &305455625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1446,5 +1448,10 @@ PrefabInstance:
 --- !u!4 &5504382757290558238 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 85658e57107245f498dc6156fda3cd83, type: 3}
+  m_PrefabInstance: {fileID: 5470122614492734709}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1910460967706892644 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 85658e57107245f498dc6156fda3cd83, type: 3}
   m_PrefabInstance: {fileID: 5470122614492734709}
   m_PrefabAsset: {fileID: 0}

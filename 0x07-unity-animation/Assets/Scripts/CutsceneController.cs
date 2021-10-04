@@ -25,7 +25,7 @@ public class CutsceneController : MonoBehaviour
 	{
         mainCamera.SetActive(true);
         timerCanvas.SetActive(true);
-        playerScript.enabled = true;
+        playerScript.canMove = true;
         gameObject.SetActive(false);
 	}
 }
