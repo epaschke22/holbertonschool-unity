@@ -29,7 +29,8 @@ public class PlayerController : MonoBehaviour
         if (isGrounded && velocity.y < 0)
 		{
             velocity.y = -2f;
-		}
+            playerAnimator.ResetTrigger("Respawn");
+        }
         playerAnimator.SetBool("IsGrounded", isGrounded);
 
         if (canMove)
