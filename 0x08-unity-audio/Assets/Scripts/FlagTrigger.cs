@@ -6,6 +6,8 @@ public class FlagTrigger : MonoBehaviour
 {
     public GameObject playerObject;
 	Timer timerRef;
+	public AudioSource BGM;
+	public AudioSource victoryMusic;
 
 	// Start is called before the first frame update
 	void Start()
@@ -18,6 +20,11 @@ public class FlagTrigger : MonoBehaviour
 		if (other.tag == "Player")
 		{
 			timerRef.Win();
+			if (BGM.isPlaying)
+			{
+				BGM.Stop();
+			}
+			victoryMusic.Play();
 		}
 	}
 }

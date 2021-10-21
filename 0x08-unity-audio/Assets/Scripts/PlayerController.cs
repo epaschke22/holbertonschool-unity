@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     bool isGrounded;
     public AudioSource grassWalk;
     public AudioSource stoneWalk;
+    public AudioSource landing;
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
