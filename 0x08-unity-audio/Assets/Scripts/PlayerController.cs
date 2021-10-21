@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
     bool isGrounded;
+    public AudioSource grassWalk;
+    public AudioSource stoneWalk;
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
@@ -29,9 +31,10 @@ public class PlayerController : MonoBehaviour
         if (isGrounded && velocity.y < 0)
 		{
             velocity.y = -2f;
-            playerAnimator.ResetTrigger("Respawn");
+            playerAnimator.ResetTrigger("Respawn"); //fixes bug that causes this to persist after actually respawning
         }
         playerAnimator.SetBool("IsGrounded", isGrounded);
+
 
         if (canMove)
 		{
@@ -41,6 +44,7 @@ public class PlayerController : MonoBehaviour
 
             playerAnimator.SetFloat("Speed", direction.magnitude);
 
+            string matName = GetMaterialOnTriangle();
 
             if (direction.magnitude >= 0.1f)
             {
@@ -50,6 +54,51 @@ public class PlayerController : MonoBehaviour
 
                 Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
                 controller.Move(moveDirection.normalized * speed * Time.deltaTime);
+
+                if (matName == "Green_leafs")
+				{
+                    if (!grassWalk.isPlaying)
+					{
+                        grassWalk.Play();
+					}
+                    if (stoneWalk.isPlaying)
+                    {
+                        stoneWalk.Stop();
+                    }
+                }
+                else if (matName == "Wood")
+				{
+                    if (!stoneWalk.isPlaying)
+                    {
+                        stoneWalk.Play();
+                    }
+                    if (grassWalk.isPlaying)
+                    {
+                        grassWalk.Stop();
+                    }
+                }
+				else
+				{
+                    if (grassWalk.isPlaying)
+                    {
+                        grassWalk.Stop();
+                    }
+                    if (stoneWalk.isPlaying)
+                    {
+                        stoneWalk.Stop();
+                    }
+                }
+            }
+			else
+			{
+                if (grassWalk.isPlaying)
+                {
+                    grassWalk.Stop();
+                }
+                if (stoneWalk.isPlaying)
+                {
+                    stoneWalk.Stop();
+                }
             }
 
             if (Input.GetButtonDown("Jump") && isGrounded)
@@ -66,5 +115,34 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(0, 30, 0);
             playerAnimator.SetTrigger("Respawn");
         }
+    }
+
+    string GetMaterialOnTriangle()
+    {
+        RaycastHit hit;
+
+        if (Physics.Raycast(groundCheck.position, Vector3.down, out hit, 0.5f))
+        {
+            MeshCollider collider = hit.collider as MeshCollider;
+            // Remember to handle case where collider is null because you hit a non-mesh primitive...
+
+            Mesh mesh = collider.sharedMesh;
+
+            // There are 3 indices stored per triangle
+            int limit = hit.triangleIndex * 3;
+            int submesh;
+            for (submesh = 0; submesh < mesh.subMeshCount; submesh++)
+            {
+                int numIndices = mesh.GetTriangles(submesh).Length;
+                if (numIndices > limit)
+                    break;
+
+                limit -= numIndices;
+            }
+
+            Material material = collider.GetComponent<MeshRenderer>().sharedMaterials[submesh];
+            return material.name;
+        }
+        return null;
     }
 }
