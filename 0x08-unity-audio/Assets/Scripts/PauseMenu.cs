@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
 	public static bool GameIsPaused = false;
 	public Canvas pauseMenuUI;
+	public AudioMixerSnapshot unpaused;
+	public AudioMixerSnapshot paused;
 
 	private void Update()
 	{
@@ -25,6 +28,7 @@ public class PauseMenu : MonoBehaviour
 
 	public void Pause()
 	{
+		paused.TransitionTo(.001f);
 		pauseMenuUI.enabled = true;
 		Time.timeScale = 0f;
 		GameIsPaused = true;
@@ -32,6 +36,7 @@ public class PauseMenu : MonoBehaviour
 
 	public void Resume()
 	{
+		unpaused.TransitionTo(.001f);
 		pauseMenuUI.enabled = false;
 		Time.timeScale = 1f;
 		GameIsPaused = false;

@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 5750136490843263631}
   - component: {fileID: 305455625}
   - component: {fileID: 1806745645242050927}
+  - component: {fileID: 5857734037089721986}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -116,6 +117,9 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 64
+  grassWalk: {fileID: 0}
+  stoneWalk: {fileID: 0}
+  landing: {fileID: 0}
   turnSmoothTime: 0.1
   canMove: 0
 --- !u!114 &305455625
@@ -174,6 +178,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!81 &5857734037089721986
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4529611014314642703}
+  m_Enabled: 1
+--- !u!114 &1297315990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5127539872342907300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4891333f845990b44ae8bd90d6dfaea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactSound: {fileID: 0}
 --- !u!1001 &5470122614492734709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1487,6 +1512,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85658e57107245f498dc6156fda3cd83, type: 3}
+--- !u!1 &5127539872342907300 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 85658e57107245f498dc6156fda3cd83, type: 3}
+  m_PrefabInstance: {fileID: 5470122614492734709}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5504382757290558238 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 85658e57107245f498dc6156fda3cd83, type: 3}

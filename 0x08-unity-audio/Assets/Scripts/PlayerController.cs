@@ -122,7 +122,7 @@ public class PlayerController : MonoBehaviour
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(groundCheck.position, Vector3.down, out hit, 0.5f))
+        if (Physics.Raycast(groundCheck.position, Vector3.down, out hit, 0.8f))
         {
             MeshCollider collider = hit.collider as MeshCollider;
             // Remember to handle case where collider is null because you hit a non-mesh primitive...
