@@ -2018,8 +2018,6 @@ MonoBehaviour:
   masterMixer: {fileID: 24100000, guid: c8d3635ec6ae7534c876b54c83fc81fe, type: 2}
   bgmSlider: {fileID: 1953390009}
   sfxSlider: {fileID: 1478902259}
-  bgmSliderValue: 1
-  sfxSliderValue: 1
   yToggle: {fileID: 390249283}
 --- !u!1 &1478902257
 GameObject:

@@ -10,15 +10,13 @@ public class OptionsMenu : MonoBehaviour
 	public AudioMixer masterMixer;
 	public Slider bgmSlider;
 	public Slider sfxSlider;
-	public static float bgmSliderValue = 1f;
-	public static float sfxSliderValue = 1f;
 	public Toggle yToggle;
 	public static bool isInverted = true;
 
 	private void Start()
 	{
-		bgmSlider.value = bgmSliderValue;
-		sfxSlider.value = sfxSliderValue;
+		bgmSlider.value = PlayerPrefs.GetFloat("bgmSliderValue", 1);
+		sfxSlider.value = PlayerPrefs.GetFloat("sfxSliderValue", 1);
 		if (isInverted == true)
 		{
 			yToggle.isOn = true;
@@ -31,15 +29,13 @@ public class OptionsMenu : MonoBehaviour
 
 	public void Back()
 	{
-		bgmSliderValue = bgmSlider.value;
-		sfxSliderValue = sfxSlider.value;
+		PlayerPrefs.SetFloat("bgmSliderValue", bgmSlider.value);
+		PlayerPrefs.SetFloat("sfxSliderValue", sfxSlider.value);
 		SceneManager.LoadScene(MainMenu.previousSceneName);
 	}
 
 	public void Apply()
 	{
-		bgmSliderValue = bgmSlider.value;
-		sfxSliderValue = sfxSlider.value;
 		if (yToggle.isOn == true)
 		{
 			isInverted = true;
@@ -53,9 +49,11 @@ public class OptionsMenu : MonoBehaviour
 	public void SetBGMVolume(float sliderValue)
 	{
 		masterMixer.SetFloat("bgmVolume", Mathf.Log10(sliderValue) * 20);
+		PlayerPrefs.SetFloat("bgmVolumeValue", Mathf.Log10(sliderValue) * 20);
 	}
 	public void SetSFXVolume(float sliderValue)
 	{
 		masterMixer.SetFloat("sfxVolume", Mathf.Log10(sliderValue) * 20);
+		PlayerPrefs.SetFloat("sfxVolumeValue", Mathf.Log10(sliderValue) * 20);
 	}
 }
