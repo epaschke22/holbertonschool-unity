@@ -36,6 +36,8 @@ public class OptionsMenu : MonoBehaviour
 
 	public void Apply()
 	{
+		PlayerPrefs.SetFloat("bgmSliderValue", bgmSlider.value);
+		PlayerPrefs.SetFloat("sfxSliderValue", sfxSlider.value);
 		if (yToggle.isOn == true)
 		{
 			isInverted = true;
