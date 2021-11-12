@@ -15,4 +15,19 @@ public class Logo_Links : MonoBehaviour
     {
         
     }
+
+    public void LoadGitHub()
+	{
+        Application.OpenURL("https://github.com/epaschke22");
+    }
+
+    public void LoadLinkedIn()
+    {
+        Application.OpenURL("https://www.linkedin.com/in/erickson-paschke-79802782/");
+    }
+
+    public void LoadEmail()
+	{
+        Application.OpenURL("mailto:ericksonpaschke@gmail.com?subject=Nice Card!");
+    }
 }
