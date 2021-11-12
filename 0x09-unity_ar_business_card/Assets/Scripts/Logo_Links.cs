@@ -30,4 +30,9 @@ public class Logo_Links : MonoBehaviour
 	{
         Application.OpenURL("mailto:ericksonpaschke@gmail.com?subject=Nice Card!");
     }
+
+    public void LoadPicture()
+    {
+        Application.OpenURL("https://i.imgur.com/dXvdHqC.gif");
+    }
 }
