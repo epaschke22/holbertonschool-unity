@@ -258,10 +258,8 @@ GameObject:
   - component: {fileID: 309061244}
   - component: {fileID: 28187989}
   - component: {fileID: 28187988}
-  - component: {fileID: 28187990}
   - component: {fileID: 28187987}
   - component: {fileID: 28187993}
-  - component: {fileID: 28187992}
   m_Layer: 0
   m_Name: Small Box H
   m_TagString: Untagged
@@ -331,46 +329,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28187986}
   m_Mesh: {fileID: 4300000, guid: 7f4ff057efa234740842b9442ebc75e6, type: 3}
---- !u!114 &28187990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 28187986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c517e7714f7154fb45959876e6daad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: {fileID: 0}
-  _vrItem: {fileID: 0}
---- !u!114 &28187992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 28187986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_grabbedKinematic: 0
-  m_grabbedCollider: {fileID: 0}
-  m_grabbedBy: {fileID: 0}
-  m_materialColorField: _OutlineColor
-  m_crosshair: {fileID: 0}
-  m_crosshairManager: {fileID: 0}
-  m_renderer: {fileID: 0}
-  m_inRange: 0
-  m_targeted: 0
 --- !u!54 &28187993
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -884,10 +842,8 @@ GameObject:
   - component: {fileID: 959525345}
   - component: {fileID: 111305941}
   - component: {fileID: 111305940}
-  - component: {fileID: 111305942}
   - component: {fileID: 111305939}
   - component: {fileID: 111305945}
-  - component: {fileID: 111305944}
   m_Layer: 0
   m_Name: Small Box C
   m_TagString: Untagged
@@ -957,46 +913,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111305938}
   m_Mesh: {fileID: 4300000, guid: 7f4ff057efa234740842b9442ebc75e6, type: 3}
---- !u!114 &111305942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 111305938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c517e7714f7154fb45959876e6daad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: {fileID: 0}
-  _vrItem: {fileID: 0}
---- !u!114 &111305944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 111305938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_grabbedKinematic: 0
-  m_grabbedCollider: {fileID: 0}
-  m_grabbedBy: {fileID: 0}
-  m_materialColorField: _OutlineColor
-  m_crosshair: {fileID: 0}
-  m_crosshairManager: {fileID: 0}
-  m_renderer: {fileID: 0}
-  m_inRange: 0
-  m_targeted: 0
 --- !u!54 &111305945
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1112,7 +1028,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792350372}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 2.5, y: 0, z: 5.5}
+  m_LocalPosition: {x: 2.37, y: 0, z: 5.5}
   m_LocalScale: {x: 0.7375744, y: 0.73757356, z: 0.7375744}
   m_Children: []
   m_Father: {fileID: 337365996}
@@ -1183,10 +1099,8 @@ GameObject:
   - component: {fileID: 1449157287}
   - component: {fileID: 159622032}
   - component: {fileID: 159622031}
-  - component: {fileID: 159622033}
   - component: {fileID: 159622030}
   - component: {fileID: 159622036}
-  - component: {fileID: 159622035}
   m_Layer: 0
   m_Name: Small Box G
   m_TagString: Untagged
@@ -1256,46 +1170,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159622029}
   m_Mesh: {fileID: 4300000, guid: 7f4ff057efa234740842b9442ebc75e6, type: 3}
---- !u!114 &159622033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159622029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c517e7714f7154fb45959876e6daad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: {fileID: 0}
-  _vrItem: {fileID: 0}
---- !u!114 &159622035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159622029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_grabbedKinematic: 0
-  m_grabbedCollider: {fileID: 0}
-  m_grabbedBy: {fileID: 0}
-  m_materialColorField: _OutlineColor
-  m_crosshair: {fileID: 0}
-  m_crosshairManager: {fileID: 0}
-  m_renderer: {fileID: 0}
-  m_inRange: 0
-  m_targeted: 0
 --- !u!54 &159622036
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1567,38 +1441,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 439240, guid: 548a40efc092c6f408cc4d1691b171cc, type: 3}
   m_PrefabInstance: {fileID: 177379430}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &177379432 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 106282, guid: 548a40efc092c6f408cc4d1691b171cc, type: 3}
-  m_PrefabInstance: {fileID: 177379430}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &177379433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177379432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IsOver: 0
---- !u!114 &177379434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177379432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b20ee9c67e5821f4d8b2f23d25538eca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reticleTransform: {fileID: 0}
-  _vrItem: {fileID: 0}
 --- !u!1 &193640133
 GameObject:
   m_ObjectHideFlags: 0
@@ -2493,10 +2335,8 @@ GameObject:
   - component: {fileID: 1821449095}
   - component: {fileID: 313074372}
   - component: {fileID: 313074371}
-  - component: {fileID: 313074373}
   - component: {fileID: 313074370}
   - component: {fileID: 313074376}
-  - component: {fileID: 313074375}
   m_Layer: 0
   m_Name: Small Box D
   m_TagString: Untagged
@@ -2566,46 +2406,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 313074369}
   m_Mesh: {fileID: 4300000, guid: 7f4ff057efa234740842b9442ebc75e6, type: 3}
---- !u!114 &313074373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 313074369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c517e7714f7154fb45959876e6daad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: {fileID: 0}
-  _vrItem: {fileID: 0}
---- !u!114 &313074375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 313074369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_grabbedKinematic: 0
-  m_grabbedCollider: {fileID: 0}
-  m_grabbedBy: {fileID: 0}
-  m_materialColorField: _OutlineColor
-  m_crosshair: {fileID: 0}
-  m_crosshairManager: {fileID: 0}
-  m_renderer: {fileID: 0}
-  m_inRange: 0
-  m_targeted: 0
 --- !u!54 &313074376
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3725,10 +3525,8 @@ GameObject:
   - component: {fileID: 1061545835}
   - component: {fileID: 352216286}
   - component: {fileID: 352216285}
-  - component: {fileID: 352216287}
   - component: {fileID: 352216284}
   - component: {fileID: 352216290}
-  - component: {fileID: 352216289}
   m_Layer: 0
   m_Name: Large Box A
   m_TagString: Untagged
@@ -3798,46 +3596,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 352216283}
   m_Mesh: {fileID: 4300000, guid: 4ea7f4ce4710e444abbd19154bbe29b8, type: 3}
---- !u!114 &352216287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 352216283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c517e7714f7154fb45959876e6daad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: {fileID: 0}
-  _vrItem: {fileID: 0}
---- !u!114 &352216289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 352216283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_grabbedKinematic: 0
-  m_grabbedCollider: {fileID: 0}
-  m_grabbedBy: {fileID: 0}
-  m_materialColorField: _OutlineColor
-  m_crosshair: {fileID: 0}
-  m_crosshairManager: {fileID: 0}
-  m_renderer: {fileID: 0}
-  m_inRange: 0
-  m_targeted: 0
 --- !u!54 &352216290
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4547,38 +4305,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 439240, guid: 548a40efc092c6f408cc4d1691b171cc, type: 3}
   m_PrefabInstance: {fileID: 484017563}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &484017565 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 106282, guid: 548a40efc092c6f408cc4d1691b171cc, type: 3}
-  m_PrefabInstance: {fileID: 484017563}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &484017566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484017565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IsOver: 0
---- !u!114 &484017567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484017565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b20ee9c67e5821f4d8b2f23d25538eca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reticleTransform: {fileID: 0}
-  _vrItem: {fileID: 0}
 --- !u!1001 &498602660
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4882,8 +4608,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1260136190}
   - component: {fileID: 515217347}
-  - component: {fileID: 515217346}
-  - component: {fileID: 515217348}
   - component: {fileID: 515217345}
   m_Layer: 0
   m_Name: floor_2
@@ -4915,19 +4639,6 @@ LODGroup:
     renderers:
     - renderer: {fileID: 1690164340}
   m_Enabled: 1
---- !u!114 &515217346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515217344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IsOver: 0
 --- !u!65 &515217347
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4941,20 +4652,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4, y: 0.19608502, z: 4}
   m_Center: {x: 0, y: 0.0940137, z: 0}
---- !u!114 &515217348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515217344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b20ee9c67e5821f4d8b2f23d25538eca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reticleTransform: {fileID: 0}
-  _vrItem: {fileID: 0}
 --- !u!1001 &534006118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6805,38 +6502,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 439240, guid: 548a40efc092c6f408cc4d1691b171cc, type: 3}
   m_PrefabInstance: {fileID: 739556727}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &739556729 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 106282, guid: 548a40efc092c6f408cc4d1691b171cc, type: 3}
-  m_PrefabInstance: {fileID: 739556727}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &739556730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 739556729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IsOver: 0
---- !u!114 &739556731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 739556729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b20ee9c67e5821f4d8b2f23d25538eca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reticleTransform: {fileID: 0}
-  _vrItem: {fileID: 0}
 --- !u!4 &753671656 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 447618, guid: 6456a4784f31cab439d29b7e3bb286a4, type: 3}
@@ -6853,10 +6518,8 @@ GameObject:
   - component: {fileID: 844360601}
   - component: {fileID: 753735705}
   - component: {fileID: 753735704}
-  - component: {fileID: 753735706}
   - component: {fileID: 753735703}
   - component: {fileID: 753735709}
-  - component: {fileID: 753735708}
   m_Layer: 0
   m_Name: Container A
   m_TagString: Untagged
@@ -6927,46 +6590,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 753735702}
   m_Mesh: {fileID: 4300000, guid: d62ba206d6f3125429f5213d81c32eb0, type: 3}
---- !u!114 &753735706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753735702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c517e7714f7154fb45959876e6daad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: {fileID: 0}
-  _vrItem: {fileID: 0}
---- !u!114 &753735708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753735702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_grabbedKinematic: 0
-  m_grabbedCollider: {fileID: 0}
-  m_grabbedBy: {fileID: 0}
-  m_materialColorField: _OutlineColor
-  m_crosshair: {fileID: 0}
-  m_crosshairManager: {fileID: 0}
-  m_renderer: {fileID: 0}
-  m_inRange: 0
-  m_targeted: 0
 --- !u!54 &753735709
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8292,10 +7915,8 @@ GameObject:
   - component: {fileID: 478087668}
   - component: {fileID: 964460322}
   - component: {fileID: 964460321}
-  - component: {fileID: 964460323}
   - component: {fileID: 964460320}
   - component: {fileID: 964460326}
-  - component: {fileID: 964460325}
   m_Layer: 0
   m_Name: Container B
   m_TagString: Untagged
@@ -8366,46 +7987,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964460319}
   m_Mesh: {fileID: 4300000, guid: d62ba206d6f3125429f5213d81c32eb0, type: 3}
---- !u!114 &964460323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964460319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c517e7714f7154fb45959876e6daad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: {fileID: 0}
-  _vrItem: {fileID: 0}
---- !u!114 &964460325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964460319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_grabbedKinematic: 0
-  m_grabbedCollider: {fileID: 0}
-  m_grabbedBy: {fileID: 0}
-  m_materialColorField: _OutlineColor
-  m_crosshair: {fileID: 0}
-  m_crosshairManager: {fileID: 0}
-  m_renderer: {fileID: 0}
-  m_inRange: 0
-  m_targeted: 0
 --- !u!54 &964460326
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8877,38 +8458,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 439240, guid: 548a40efc092c6f408cc4d1691b171cc, type: 3}
   m_PrefabInstance: {fileID: 1036981531}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1036981533 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 106282, guid: 548a40efc092c6f408cc4d1691b171cc, type: 3}
-  m_PrefabInstance: {fileID: 1036981531}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1036981534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1036981533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IsOver: 0
---- !u!114 &1036981535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1036981533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b20ee9c67e5821f4d8b2f23d25538eca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reticleTransform: {fileID: 0}
-  _vrItem: {fileID: 0}
 --- !u!1001 &1037386632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9021,10 +8570,8 @@ GameObject:
   - component: {fileID: 845874170}
   - component: {fileID: 1047313459}
   - component: {fileID: 1047313458}
-  - component: {fileID: 1047313460}
   - component: {fileID: 1047313457}
   - component: {fileID: 1047313463}
-  - component: {fileID: 1047313462}
   m_Layer: 0
   m_Name: Medium Box B
   m_TagString: Untagged
@@ -9094,46 +8641,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047313456}
   m_Mesh: {fileID: 4300000, guid: 4ea7f4ce4710e444abbd19154bbe29b8, type: 3}
---- !u!114 &1047313460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1047313456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c517e7714f7154fb45959876e6daad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: {fileID: 0}
-  _vrItem: {fileID: 0}
---- !u!114 &1047313462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1047313456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_grabbedKinematic: 0
-  m_grabbedCollider: {fileID: 0}
-  m_grabbedBy: {fileID: 0}
-  m_materialColorField: _OutlineColor
-  m_crosshair: {fileID: 0}
-  m_crosshairManager: {fileID: 0}
-  m_renderer: {fileID: 0}
-  m_inRange: 0
-  m_targeted: 0
 --- !u!54 &1047313463
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9925,8 +9432,6 @@ GameObject:
   m_Component:
   - component: {fileID: 336935736}
   - component: {fileID: 1150182705}
-  - component: {fileID: 1150182704}
-  - component: {fileID: 1150182706}
   - component: {fileID: 1150182703}
   m_Layer: 0
   m_Name: floor_2 (2)
@@ -9958,19 +9463,6 @@ LODGroup:
     renderers:
     - renderer: {fileID: 1552610300}
   m_Enabled: 1
---- !u!114 &1150182704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150182702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IsOver: 0
 --- !u!65 &1150182705
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9984,20 +9476,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4, y: 0.19608502, z: 4}
   m_Center: {x: 0, y: 0.0940137, z: 0}
---- !u!114 &1150182706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150182702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b20ee9c67e5821f4d8b2f23d25538eca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reticleTransform: {fileID: 0}
-  _vrItem: {fileID: 0}
 --- !u!1 &1152786550
 GameObject:
   m_ObjectHideFlags: 0
@@ -10009,10 +9487,8 @@ GameObject:
   - component: {fileID: 1803687453}
   - component: {fileID: 1152786553}
   - component: {fileID: 1152786552}
-  - component: {fileID: 1152786554}
   - component: {fileID: 1152786551}
   - component: {fileID: 1152786557}
-  - component: {fileID: 1152786556}
   m_Layer: 0
   m_Name: Tube B
   m_TagString: Untagged
@@ -10083,46 +9559,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152786550}
   m_Mesh: {fileID: 4300000, guid: d62ba206d6f3125429f5213d81c32eb0, type: 3}
---- !u!114 &1152786554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152786550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c517e7714f7154fb45959876e6daad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: {fileID: 0}
-  _vrItem: {fileID: 0}
---- !u!114 &1152786556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152786550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_grabbedKinematic: 0
-  m_grabbedCollider: {fileID: 0}
-  m_grabbedBy: {fileID: 0}
-  m_materialColorField: _OutlineColor
-  m_crosshair: {fileID: 0}
-  m_crosshairManager: {fileID: 0}
-  m_renderer: {fileID: 0}
-  m_inRange: 0
-  m_targeted: 0
 --- !u!54 &1152786557
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11408,38 +10844,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 439240, guid: 548a40efc092c6f408cc4d1691b171cc, type: 3}
   m_PrefabInstance: {fileID: 1336945478}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1336945480 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 106282, guid: 548a40efc092c6f408cc4d1691b171cc, type: 3}
-  m_PrefabInstance: {fileID: 1336945478}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1336945481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1336945480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IsOver: 0
---- !u!114 &1336945482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1336945480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b20ee9c67e5821f4d8b2f23d25538eca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reticleTransform: {fileID: 0}
-  _vrItem: {fileID: 0}
 --- !u!1 &1338788923
 GameObject:
   m_ObjectHideFlags: 0
@@ -11748,38 +11152,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 439240, guid: 548a40efc092c6f408cc4d1691b171cc, type: 3}
   m_PrefabInstance: {fileID: 1359517648}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1359517650 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 106282, guid: 548a40efc092c6f408cc4d1691b171cc, type: 3}
-  m_PrefabInstance: {fileID: 1359517648}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1359517651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359517650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IsOver: 0
---- !u!114 &1359517652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359517650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b20ee9c67e5821f4d8b2f23d25538eca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reticleTransform: {fileID: 0}
-  _vrItem: {fileID: 0}
 --- !u!1 &1364324113
 GameObject:
   m_ObjectHideFlags: 0
@@ -11945,8 +11317,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1826156609}
   - component: {fileID: 1395487791}
-  - component: {fileID: 1395487790}
-  - component: {fileID: 1395487792}
   - component: {fileID: 1395487789}
   m_Layer: 0
   m_Name: floor_2 (1)
@@ -11978,19 +11348,6 @@ LODGroup:
     renderers:
     - renderer: {fileID: 1515180675}
   m_Enabled: 1
---- !u!114 &1395487790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1395487788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IsOver: 0
 --- !u!65 &1395487791
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12004,20 +11361,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4, y: 0.19608502, z: 4}
   m_Center: {x: 0, y: 0.0940137, z: 0}
---- !u!114 &1395487792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1395487788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b20ee9c67e5821f4d8b2f23d25538eca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reticleTransform: {fileID: 0}
-  _vrItem: {fileID: 0}
 --- !u!1 &1415807834
 GameObject:
   m_ObjectHideFlags: 0
@@ -12029,9 +11372,7 @@ GameObject:
   - component: {fileID: 1415807835}
   - component: {fileID: 1415807837}
   - component: {fileID: 1415807836}
-  - component: {fileID: 1415807838}
   - component: {fileID: 1415807841}
-  - component: {fileID: 1415807840}
   - component: {fileID: 1415807842}
   m_Layer: 0
   m_Name: RookDark
@@ -12103,46 +11444,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415807834}
   m_Mesh: {fileID: 4300000, guid: 4c7fefe9f4d55e44398c01a6266ef093, type: 3}
---- !u!114 &1415807838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1415807834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c517e7714f7154fb45959876e6daad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: {fileID: 0}
-  _vrItem: {fileID: 0}
---- !u!114 &1415807840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1415807834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_grabbedKinematic: 0
-  m_grabbedCollider: {fileID: 0}
-  m_grabbedBy: {fileID: 0}
-  m_materialColorField: _OutlineColor
-  m_crosshair: {fileID: 0}
-  m_crosshairManager: {fileID: 0}
-  m_renderer: {fileID: 0}
-  m_inRange: 0
-  m_targeted: 0
 --- !u!54 &1415807841
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12439,9 +11740,7 @@ GameObject:
   - component: {fileID: 1448608424}
   - component: {fileID: 1448608423}
   - component: {fileID: 1448608420}
-  - component: {fileID: 1448608419}
   - component: {fileID: 1448608422}
-  - component: {fileID: 1448608418}
   m_Layer: 0
   m_Name: Rope
   m_TagString: Untagged
@@ -12449,46 +11748,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1448608418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1448608417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c517e7714f7154fb45959876e6daad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: {fileID: 0}
-  _vrItem: {fileID: 0}
---- !u!114 &1448608419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1448608417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_grabbedKinematic: 0
-  m_grabbedCollider: {fileID: 0}
-  m_grabbedBy: {fileID: 0}
-  m_materialColorField: _OutlineColor
-  m_crosshair: {fileID: 0}
-  m_crosshairManager: {fileID: 0}
-  m_renderer: {fileID: 0}
-  m_inRange: 0
-  m_targeted: 0
 --- !u!54 &1448608420
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13275,10 +12534,8 @@ GameObject:
   - component: {fileID: 239776358}
   - component: {fileID: 1526245124}
   - component: {fileID: 1526245123}
-  - component: {fileID: 1526245125}
   - component: {fileID: 1526245122}
   - component: {fileID: 1526245128}
-  - component: {fileID: 1526245127}
   m_Layer: 0
   m_Name: Tube A
   m_TagString: Untagged
@@ -13349,46 +12606,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1526245121}
   m_Mesh: {fileID: 4300000, guid: d62ba206d6f3125429f5213d81c32eb0, type: 3}
---- !u!114 &1526245125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526245121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c517e7714f7154fb45959876e6daad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: {fileID: 0}
-  _vrItem: {fileID: 0}
---- !u!114 &1526245127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526245121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_grabbedKinematic: 0
-  m_grabbedCollider: {fileID: 0}
-  m_grabbedBy: {fileID: 0}
-  m_materialColorField: _OutlineColor
-  m_crosshair: {fileID: 0}
-  m_crosshairManager: {fileID: 0}
-  m_renderer: {fileID: 0}
-  m_inRange: 0
-  m_targeted: 0
 --- !u!54 &1526245128
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14061,10 +13278,8 @@ GameObject:
   - component: {fileID: 2102037104}
   - component: {fileID: 1645799098}
   - component: {fileID: 1645799097}
-  - component: {fileID: 1645799099}
   - component: {fileID: 1645799096}
   - component: {fileID: 1645799102}
-  - component: {fileID: 1645799101}
   m_Layer: 0
   m_Name: Small Box A
   m_TagString: Untagged
@@ -14134,46 +13349,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645799095}
   m_Mesh: {fileID: 4300000, guid: 7f4ff057efa234740842b9442ebc75e6, type: 3}
---- !u!114 &1645799099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645799095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c517e7714f7154fb45959876e6daad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: {fileID: 0}
-  _vrItem: {fileID: 0}
---- !u!114 &1645799101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645799095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_grabbedKinematic: 0
-  m_grabbedCollider: {fileID: 0}
-  m_grabbedBy: {fileID: 0}
-  m_materialColorField: _OutlineColor
-  m_crosshair: {fileID: 0}
-  m_crosshairManager: {fileID: 0}
-  m_renderer: {fileID: 0}
-  m_inRange: 0
-  m_targeted: 0
 --- !u!54 &1645799102
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14201,10 +13376,8 @@ GameObject:
   - component: {fileID: 553937380}
   - component: {fileID: 1662838656}
   - component: {fileID: 1662838655}
-  - component: {fileID: 1662838657}
   - component: {fileID: 1662838654}
   - component: {fileID: 1662838660}
-  - component: {fileID: 1662838659}
   m_Layer: 0
   m_Name: Small Box E
   m_TagString: Untagged
@@ -14274,46 +13447,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662838653}
   m_Mesh: {fileID: 4300000, guid: 7f4ff057efa234740842b9442ebc75e6, type: 3}
---- !u!114 &1662838657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662838653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c517e7714f7154fb45959876e6daad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: {fileID: 0}
-  _vrItem: {fileID: 0}
---- !u!114 &1662838659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662838653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_grabbedKinematic: 0
-  m_grabbedCollider: {fileID: 0}
-  m_grabbedBy: {fileID: 0}
-  m_materialColorField: _OutlineColor
-  m_crosshair: {fileID: 0}
-  m_crosshairManager: {fileID: 0}
-  m_renderer: {fileID: 0}
-  m_inRange: 0
-  m_targeted: 0
 --- !u!54 &1662838660
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14981,10 +14114,8 @@ GameObject:
   - component: {fileID: 2139336462}
   - component: {fileID: 1723585045}
   - component: {fileID: 1723585044}
-  - component: {fileID: 1723585046}
   - component: {fileID: 1723585043}
   - component: {fileID: 1723585049}
-  - component: {fileID: 1723585048}
   m_Layer: 0
   m_Name: Small Box B
   m_TagString: Untagged
@@ -15054,46 +14185,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1723585042}
   m_Mesh: {fileID: 4300000, guid: 7f4ff057efa234740842b9442ebc75e6, type: 3}
---- !u!114 &1723585046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723585042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c517e7714f7154fb45959876e6daad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: {fileID: 0}
-  _vrItem: {fileID: 0}
---- !u!114 &1723585048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723585042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_grabbedKinematic: 0
-  m_grabbedCollider: {fileID: 0}
-  m_grabbedBy: {fileID: 0}
-  m_materialColorField: _OutlineColor
-  m_crosshair: {fileID: 0}
-  m_crosshairManager: {fileID: 0}
-  m_renderer: {fileID: 0}
-  m_inRange: 0
-  m_targeted: 0
 --- !u!54 &1723585049
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16148,10 +15239,8 @@ GameObject:
   - component: {fileID: 152941165}
   - component: {fileID: 1792350375}
   - component: {fileID: 1792350374}
-  - component: {fileID: 1792350376}
   - component: {fileID: 1792350373}
   - component: {fileID: 1792350379}
-  - component: {fileID: 1792350378}
   m_Layer: 0
   m_Name: Console
   m_TagString: Untagged
@@ -16222,46 +15311,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792350372}
   m_Mesh: {fileID: 4300000, guid: 7d22befb952c070459bc8f06ba0a5f84, type: 3}
---- !u!114 &1792350376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1792350372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c517e7714f7154fb45959876e6daad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: {fileID: 0}
-  _vrItem: {fileID: 0}
---- !u!114 &1792350378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1792350372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_grabbedKinematic: 0
-  m_grabbedCollider: {fileID: 0}
-  m_grabbedBy: {fileID: 0}
-  m_materialColorField: _OutlineColor
-  m_crosshair: {fileID: 0}
-  m_crosshairManager: {fileID: 0}
-  m_renderer: {fileID: 0}
-  m_inRange: 0
-  m_targeted: 0
 --- !u!54 &1792350379
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16523,9 +15572,7 @@ GameObject:
   - component: {fileID: 1829891269}
   - component: {fileID: 1829891268}
   - component: {fileID: 1829891265}
-  - component: {fileID: 1829891264}
   - component: {fileID: 1829891267}
-  - component: {fileID: 1829891263}
   m_Layer: 0
   m_Name: KnightLight
   m_TagString: Untagged
@@ -16533,46 +15580,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1829891263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829891262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c517e7714f7154fb45959876e6daad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: {fileID: 0}
-  _vrItem: {fileID: 0}
---- !u!114 &1829891264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829891262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_grabbedKinematic: 0
-  m_grabbedCollider: {fileID: 0}
-  m_grabbedBy: {fileID: 0}
-  m_materialColorField: _OutlineColor
-  m_crosshair: {fileID: 0}
-  m_crosshairManager: {fileID: 0}
-  m_renderer: {fileID: 0}
-  m_inRange: 0
-  m_targeted: 0
 --- !u!54 &1829891265
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17142,7 +16149,7 @@ MonoBehaviour:
   m_Camera: {fileID: 632362086}
   m_OriginBaseGameObject: {fileID: 1890722557}
   m_CameraFloorOffsetObject: {fileID: 370940300}
-  m_RequestedTrackingOriginMode: 0
+  m_RequestedTrackingOriginMode: 1
   m_CameraYOffset: 1.1176
 --- !u!4 &1890722559
 Transform:
@@ -18291,10 +17298,8 @@ GameObject:
   - component: {fileID: 7257794}
   - component: {fileID: 2084471652}
   - component: {fileID: 2084471651}
-  - component: {fileID: 2084471653}
   - component: {fileID: 2084471650}
   - component: {fileID: 2084471656}
-  - component: {fileID: 2084471655}
   m_Layer: 0
   m_Name: Medium Box A
   m_TagString: Untagged
@@ -18364,46 +17369,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084471649}
   m_Mesh: {fileID: 4300000, guid: 4ea7f4ce4710e444abbd19154bbe29b8, type: 3}
---- !u!114 &2084471653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084471649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c517e7714f7154fb45959876e6daad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: {fileID: 0}
-  _vrItem: {fileID: 0}
---- !u!114 &2084471655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084471649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_grabbedKinematic: 0
-  m_grabbedCollider: {fileID: 0}
-  m_grabbedBy: {fileID: 0}
-  m_materialColorField: _OutlineColor
-  m_crosshair: {fileID: 0}
-  m_crosshairManager: {fileID: 0}
-  m_renderer: {fileID: 0}
-  m_inRange: 0
-  m_targeted: 0
 --- !u!54 &2084471656
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18431,10 +17396,8 @@ GameObject:
   - component: {fileID: 144297399}
   - component: {fileID: 2084804446}
   - component: {fileID: 2084804445}
-  - component: {fileID: 2084804447}
   - component: {fileID: 2084804444}
   - component: {fileID: 2084804450}
-  - component: {fileID: 2084804449}
   m_Layer: 0
   m_Name: Small Box F
   m_TagString: Untagged
@@ -18504,46 +17467,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084804443}
   m_Mesh: {fileID: 4300000, guid: 7f4ff057efa234740842b9442ebc75e6, type: 3}
---- !u!114 &2084804447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084804443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8c517e7714f7154fb45959876e6daad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: {fileID: 0}
-  _vrItem: {fileID: 0}
---- !u!114 &2084804449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084804443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d1a7708e76601b4ea829921c33bc624, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 1
-  m_snapOrientation: 1
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  m_grabbedKinematic: 0
-  m_grabbedCollider: {fileID: 0}
-  m_grabbedBy: {fileID: 0}
-  m_materialColorField: _OutlineColor
-  m_crosshair: {fileID: 0}
-  m_crosshairManager: {fileID: 0}
-  m_renderer: {fileID: 0}
-  m_inRange: 0
-  m_targeted: 0
 --- !u!54 &2084804450
 Rigidbody:
   m_ObjectHideFlags: 0
