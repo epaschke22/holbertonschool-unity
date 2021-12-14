@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LayerNames:
   - Default
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - ContainerA
+  - ContainerB
+  - ChessPiece1
+  - ChessPiece2
+  - ChessPiece3
+  - ChessPiece4
   - 
   - 
   - 
