@@ -15,6 +15,8 @@ public class TeleportManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        rayInteractor.enabled = false;
+
         _teleportActivate = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Mode Activate");
         _teleportActivate.performed += OnTeleportActivate;
         _teleportActivate.canceled += OnTeleportRelease;
