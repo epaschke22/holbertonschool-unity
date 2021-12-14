@@ -11,7 +11,7 @@ public class ProjectorPuzzle : MonoBehaviour
 
     public GameObject projector;
 
-    public void ActivateDoor(int value)
+    public void ActivateProjector(int value)
     {
         if (value == 1)
             chess1 = true;

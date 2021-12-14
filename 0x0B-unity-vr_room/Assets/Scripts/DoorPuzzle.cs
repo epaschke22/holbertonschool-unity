@@ -9,6 +9,7 @@ public class DoorPuzzle : MonoBehaviour
 
     public GameObject openDoor;
     public GameObject lockedDoor;
+    public GameObject teleportPlane;
 
     public void ActivateDoor(int value)
 	{
@@ -24,11 +25,13 @@ public class DoorPuzzle : MonoBehaviour
         if (containerA == true && containerB == true)
 		{
             openDoor.SetActive(true);
+            teleportPlane.SetActive(true);
             lockedDoor.SetActive(false);
         }
         else
 		{
             openDoor.SetActive(false);
+            teleportPlane.SetActive(false);
             lockedDoor.SetActive(true);
         }
 	}
