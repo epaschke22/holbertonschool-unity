@@ -6,6 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes: []
   m_configObjects:
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 38828d3183323c347aadb9d6906e55ab, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 1cc10cf4915965440934c92f4730c032, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 79544285f3f9a5d43815a8e9f1d007d4, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e1d107435805fb34ab62019cf57a2a35, type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: c6b1147a6174fbd4bac193cbc38faf5c, type: 2}
