@@ -10,7 +10,6 @@ public class TeleportManager : MonoBehaviour
     [SerializeField] private XRRayInteractor rayInteractor;
     [SerializeField] private TeleportationProvider provider;
     InputAction _teleportActivate;
-    bool _isActive;
 
     // Start is called before the first frame update
     void Start()
