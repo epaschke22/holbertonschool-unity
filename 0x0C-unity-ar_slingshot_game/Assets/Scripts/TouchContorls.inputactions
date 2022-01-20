@@ -1,0 +1,33 @@
+{
+    "name": "TouchContorls",
+    "maps": [
+        {
+            "name": "Touch",
+            "id": "fd49e471-ec78-4b89-b287-911ed4ad9260",
+            "actions": [
+                {
+                    "name": "TouchInput",
+                    "type": "PassThrough",
+                    "id": "8fccb968-c4a7-4c8f-8417-32bf127e82c9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "312b2f4f-fcaf-42c7-a425-bc92ee114a2b",
+                    "path": "<Touchscreen>/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TouchInput",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
