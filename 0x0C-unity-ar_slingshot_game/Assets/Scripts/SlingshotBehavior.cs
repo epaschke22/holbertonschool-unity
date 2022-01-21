@@ -12,9 +12,10 @@ public class SlingshotBehavior : MonoBehaviour
     public Transform cameraHandleParent;
     public Transform cameraSlingParent;
     public Transform slingshotAimParent;
+    public GameObject Ammo;
     bool canPull = true;
-    public bool gameBegin = true;
-    public ARPlane PlayArea = SelectPlane.playArea;
+    public bool gameActive = false;
+    public ARPlane PlayArea;
 
 
     // Start is called before the first frame update
@@ -23,22 +24,36 @@ public class SlingshotBehavior : MonoBehaviour
         
     }
 
+    public void Activate()
+	{
+        cameraHandleParent.gameObject.SetActive(true);
+        cameraSlingParent.gameObject.SetActive(true);
+        gameActive = true;
+	}
+
+    public void Deactivate()
+    {
+        cameraHandleParent.gameObject.SetActive(false);
+        cameraSlingParent.gameObject.SetActive(false);
+        gameActive = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (gameBegin == true)
+        if (gameActive == true)
 		{
             if (Input.touchCount > 0 && canPull == true)
             {
-                canPull = false;
+                PlayArea = SelectPlane.playArea;
                 slingshotHandle.SetParent(PlayArea.transform, true);
-            }
-            else
-            {
-                canPull = true;
-                slingshotHandle.position = cameraHandleParent.position;
-                slingshotHandle.rotation = cameraHandleParent.rotation;
-                slingshotHandle.SetParent(cameraHandleParent, false);
+
+                if (Input.touchCount == 0)
+				{
+                    slingshotHandle.position = cameraHandleParent.position;
+                    slingshotHandle.rotation = cameraHandleParent.rotation;
+                    slingshotHandle.SetParent(cameraHandleParent, false);
+                }
             }
         }
     }

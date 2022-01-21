@@ -15,13 +15,16 @@ public class SelectPlane : MonoBehaviour
 
     public GameObject initialTextPrompt;
     public GameObject startButton;
-    public GameObject targetSpawner;
+
+    public GameObject target;
+    public int numberOfTagets;
     public NavMeshSurface _navMeshSurface;
     public static ARPlane playArea;
     public Material playAreaMaterial;
     public Gradient playAreaBorder;
+    public Material defaultMaterial;
+    public Gradient defaultBorder;
 
-    private GameObject spawnedAI;
     private ARRaycastManager _arRaycastManager;
     private ARPlaneManager _arPlaneManager;
     private Vector2 touchPosition;
@@ -60,64 +63,61 @@ public class SelectPlane : MonoBehaviour
                 {
                     playArea = _arPlaneManager.GetPlane(hit.trackableId);
                 }
-                startButton.SetActive(true);
-                _arPlaneManager.enabled = false;
                 playArea.GetComponent<MeshRenderer>().material = playAreaMaterial;
                 playArea.GetComponent<LineRenderer>().colorGradient = playAreaBorder;
+                startButton.SetActive(true);
+                _arPlaneManager.enabled = false;
             }
         }
     }
 
     public void StartGame()
     {
-        //_surfaces[0] = playArea.gameObject;
-        //BakeAtRuntime();
-        _navMeshSurface = playArea.GetComponent<NavMeshSurface>();
-        _navMeshSurface.BuildNavMesh();
-        playArea.gameObject.GetComponent<MeshRenderer>().enabled = false;
-        spawnedAI = Instantiate(targetSpawner, playArea.center, Quaternion.Euler(0, 0, 0));
-    }
-
-	//private void BakeAtRuntime()
-	//{
-	//	_navMeshSurface = new NavMeshSurface[_surfaces.Length];
-	//	for (int i = 0; i < _navMeshSurface.Length; i++)
-	//	{
-	//		if (_surfaces[i].gameObject.GetComponent<NavMeshSurface>() == null)
-	//		{
-	//			_navMeshSurface[i] = _surfaces[i].gameObject.AddComponent<NavMeshSurface>();
-	//		}
-	//		else
-	//		{
-	//			_navMeshSurface[i] = _surfaces[i].gameObject.GetComponent<NavMeshSurface>();
-	//		}
-	//	}
-	//	for (int i = 0; i < _navMeshSurface.Length; i++)
-	//	{
-	//		_navMeshSurface[i].BuildNavMesh();
-	//	}
-	//}
-
-	public void Reset()
-    {
-        _arPlaneManager.enabled = true;
+        debug3.color = Color.red;
         startButton.SetActive(false);
-        initialTextPrompt.SetActive(true);
-        Destroy(playArea.gameObject);
-        playArea = null;
-    }
-
-    public void DisablePlanes()
-    {
+        initialTextPrompt.SetActive(false);
         foreach (ARPlane plane in _arPlaneManager.trackables)
         {
             if (!(plane.trackableId == playArea.trackableId))
             {
-                Destroy(plane.gameObject);
+                plane.gameObject.SetActive(false);
             }
         }
+        debug3.color = Color.yellow;
+        _navMeshSurface = playArea.GetComponent<NavMeshSurface>();
+        _navMeshSurface.BuildNavMesh();
+        playArea.GetComponent<MeshRenderer>().enabled = false;
+        SpawnAI(numberOfTagets);
+        debug3.color = Color.green;
+    }
 
-        _arPlaneManager.enabled = false;
+    public void SpawnAI(int amount)
+	{
+        for (int i = 0; i < amount; i++)
+        {
+            Vector3 randomOffset = new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f));
+            Instantiate(target, playArea.center + randomOffset, Quaternion.Euler(0, 0, 0));
+        }
+        debug2.color = Color.green;
+    }
+
+    public void ResetGame()
+    {
+        startButton.SetActive(false);
+        initialTextPrompt.SetActive(true);
+        playArea.GetComponent<MeshRenderer>().material = defaultMaterial;
+        playArea.GetComponent<LineRenderer>().colorGradient = defaultBorder;
+        playArea.gameObject.SetActive(true);
+        playArea = null;
+        _arPlaneManager.enabled = true;
+        foreach (ARPlane plane in _arPlaneManager.trackables)
+        {
+            plane.gameObject.SetActive(true);
+        }
+        foreach(GameObject _target in GameObject.FindGameObjectsWithTag("Target")) 
+        {
+            Destroy(_target);
+        }
     }
 
     public void Quit()
