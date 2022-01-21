@@ -229,5 +229,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2f7dbd8fc0aea54898ed6458f29516d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wanderRadius: 1
+  wanderRadius: 3
   wanderTimer: 1
