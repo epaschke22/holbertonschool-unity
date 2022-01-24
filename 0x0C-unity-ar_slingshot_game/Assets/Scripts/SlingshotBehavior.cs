@@ -22,6 +22,9 @@ public class SlingshotBehavior : MonoBehaviour
     public Transform ammoSpawn;
     public GameObject Ammo;
     public GameObject ammoUI;
+    public GameObject tryAgainButton;
+    public ScoreTracking scoreUI;
+
     GameObject ammoInst;
     int ammoCount = 7;
     public float power = 1f;
@@ -33,10 +36,19 @@ public class SlingshotBehavior : MonoBehaviour
 	{
         cameraHandleParent.gameObject.SetActive(true);
         cameraSlingParent.gameObject.SetActive(true);
+        scoreUI.ScoreReset();
+        tryAgainButton.SetActive(false);
         DelayInput();
+        ammoUI.GetComponent<AmmoUI>().Reload();
         ammoUI.SetActive(true);
         ammoCount = 7;
         ammoInst = Instantiate(Ammo, ammoSpawn);
+        slingshotSling.position = cameraSlingParent.position;
+        slingshotSling.rotation = cameraSlingParent.rotation;
+        slingshotSling.SetParent(cameraSlingParent, true);
+        slingshotHandle.position = cameraHandleParent.position;
+        slingshotHandle.rotation = cameraHandleParent.rotation;
+        slingshotHandle.SetParent(cameraHandleParent, true);
     }
 
     public async void DelayInput()
@@ -63,7 +75,7 @@ public class SlingshotBehavior : MonoBehaviour
         if (gameActive == true)
 		{
             debug4.color = Color.red;
-            if (Input.touchCount > 0 && canPull == true)
+            if (Input.touchCount > 0 && canPull == true && ammoCount > 0)
             {
                 Touch touch = Input.GetTouch(0);
                 // Handle finger movements based on TouchPhase
@@ -83,6 +95,8 @@ public class SlingshotBehavior : MonoBehaviour
                     case TouchPhase.Ended:
                         debug4.color = Color.green;
                         float dist = Vector3.Distance(slingshotAimParent.position, cameraSlingParent.position);
+                        ammoCount -= 1;
+                        ammoUI.GetComponent<AmmoUI>().UpdateAmount(ammoCount);
                         LaunchAmmo(dist);
                         SlingMotion();
                         break;
@@ -99,7 +113,6 @@ public class SlingshotBehavior : MonoBehaviour
         ammoInst.GetComponent<Rigidbody>().AddForce(ammoInst.transform.forward * dist * power, ForceMode.Impulse);
         ammoInst.GetComponent<AmmoBehavior>().Delete();
         ammoInst = null;
-        ammoCount -= 1;
     }
 
     public async void SlingMotion()
@@ -120,5 +133,7 @@ public class SlingshotBehavior : MonoBehaviour
         slingshotHandle.SetParent(cameraHandleParent, true);
         if (ammoCount > 0)
             ammoInst = Instantiate(Ammo, ammoSpawn);
+		else
+            tryAgainButton.SetActive(true);
     }
 }

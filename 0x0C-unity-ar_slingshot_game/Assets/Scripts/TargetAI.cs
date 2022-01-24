@@ -29,6 +29,7 @@ public class TargetAI : MonoBehaviour
             Vector3 newPos = RandomNavSphere(transform.position, wanderRadius, -1);
             agent.SetDestination(newPos);
             timer = 0;
+            wanderTimer = Random.Range(1f, 4f);
         }
     }
 

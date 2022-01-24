@@ -14,7 +14,9 @@ public class SelectPlane : MonoBehaviour
     public Image debug4;
 
     public GameObject initialTextPrompt;
+    public GameObject scoreText;
     public GameObject startButton;
+    public GameObject tryAgainButton;
 
     public GameObject target;
     public int numberOfTagets;
@@ -95,7 +97,7 @@ public class SelectPlane : MonoBehaviour
 	{
         for (int i = 0; i < amount; i++)
         {
-            Vector3 randomOffset = new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f));
+            Vector3 randomOffset = new Vector3(Random.Range(-0.1f, 0.1f), 0.05f, Random.Range(-0.1f, 0.1f));
             Instantiate(target, playArea.center + randomOffset, Quaternion.Euler(0, 0, 0));
         }
         debug2.color = Color.green;
@@ -103,7 +105,9 @@ public class SelectPlane : MonoBehaviour
 
     public void ResetGame()
     {
+        tryAgainButton.SetActive(false);
         startButton.SetActive(false);
+        scoreText.SetActive(false);
         initialTextPrompt.SetActive(true);
         playArea.GetComponent<MeshRenderer>().material = defaultMaterial;
         playArea.GetComponent<LineRenderer>().colorGradient = defaultBorder;

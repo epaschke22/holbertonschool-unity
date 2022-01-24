@@ -1298,6 +1298,7 @@ GameObject:
   - component: {fileID: 1061212286}
   - component: {fileID: 1061212285}
   - component: {fileID: 1061212287}
+  - component: {fileID: 1061212288}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -1371,6 +1372,8 @@ MonoBehaviour:
   ammoSpawn: {fileID: 2114510209}
   Ammo: {fileID: 3870943508031504388, guid: 10ea876b385be784992a67a0b3937512, type: 3}
   ammoUI: {fileID: 1478044966}
+  tryAgainButton: {fileID: 1973542113}
+  scoreUI: {fileID: 1061212288}
   power: 40
   gameActive: 0
   PlayArea: {fileID: 0}
@@ -1404,7 +1407,9 @@ MonoBehaviour:
   debug3: {fileID: 586889907}
   debug4: {fileID: 21191033}
   initialTextPrompt: {fileID: 1672555973}
+  scoreText: {fileID: 852219441}
   startButton: {fileID: 670562521}
+  tryAgainButton: {fileID: 1973542113}
   target: {fileID: 5644922876449346802, guid: 04936f7039a7be34c998af8895b3dffe, type: 3}
   numberOfTagets: 5
   _navMeshSurface: {fileID: 0}
@@ -1468,6 +1473,20 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
+--- !u!114 &1061212288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061212281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39cff879c16ea2747bdab2fecd6b5dca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 852219443}
+  scoreValue: 0
 --- !u!1 &1084348697
 GameObject:
   m_ObjectHideFlags: 0
@@ -2323,6 +2342,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1478044967}
+  - component: {fileID: 1478044968}
   m_Layer: 5
   m_Name: AmmoUI
   m_TagString: Untagged
@@ -2357,6 +2377,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -399.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1478044968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478044966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1de2087e57a2064da7e49c70fb42585, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammo:
+  - {fileID: 1274395496}
+  - {fileID: 703828727}
+  - {fileID: 1421044997}
+  - {fileID: 1596305144}
+  - {fileID: 2144589435}
+  - {fileID: 1084348697}
+  - {fileID: 731698782}
 --- !u!1 &1596305144
 GameObject:
   m_ObjectHideFlags: 0
@@ -2786,7 +2826,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1973542116}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1061212285}
+        m_TargetAssemblyTypeName: SlingshotBehavior, Assembly-CSharp
+        m_MethodName: Activate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1973542116
 MonoBehaviour:
   m_ObjectHideFlags: 0

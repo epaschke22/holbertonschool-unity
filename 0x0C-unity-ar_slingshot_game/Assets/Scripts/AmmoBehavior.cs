@@ -7,7 +7,7 @@ public class AmmoBehavior : MonoBehaviour
 
     public void Delete()
 	{
-        Destroy(transform, 2f);
+        Destroy(gameObject, 2f);
 	}
 
     // Update is called once per frame
