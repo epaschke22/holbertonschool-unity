@@ -5,12 +5,15 @@ using UnityEngine.UI;
 
 public class ScoreTracking : MonoBehaviour
 {
+	public static ScoreTracking instance;
+
     public Text scoreText;
     public int scoreValue;
 	SlingshotBehavior slingshot;
 
 	private void Start()
 	{
+		instance = this;
 		slingshot = gameObject.GetComponent<SlingshotBehavior>();
 	}
 

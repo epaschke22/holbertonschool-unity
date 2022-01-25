@@ -1374,7 +1374,7 @@ MonoBehaviour:
   ammoUI: {fileID: 1478044966}
   tryAgainButton: {fileID: 1973542113}
   scoreUI: {fileID: 1061212288}
-  power: 40
+  power: 30
   gameActive: 0
   PlayArea: {fileID: 0}
 --- !u!114 &1061212286

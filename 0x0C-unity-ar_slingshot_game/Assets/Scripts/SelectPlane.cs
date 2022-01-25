@@ -88,7 +88,8 @@ public class SelectPlane : MonoBehaviour
         debug3.color = Color.yellow;
         _navMeshSurface = playArea.GetComponent<NavMeshSurface>();
         _navMeshSurface.BuildNavMesh();
-        playArea.GetComponent<MeshRenderer>().enabled = false;
+        playArea.gameObject.GetComponent<MeshRenderer>().enabled = false;
+        //playArea.gameObject.GetComponent<LineRenderer>().enabled = false;
         SpawnAI(numberOfTagets);
         debug3.color = Color.green;
     }
@@ -109,9 +110,10 @@ public class SelectPlane : MonoBehaviour
         startButton.SetActive(false);
         scoreText.SetActive(false);
         initialTextPrompt.SetActive(true);
+        playArea.gameObject.GetComponent<MeshRenderer>().enabled = true;
+        playArea.gameObject.GetComponent<LineRenderer>().enabled = true;
         playArea.GetComponent<MeshRenderer>().material = defaultMaterial;
         playArea.GetComponent<LineRenderer>().colorGradient = defaultBorder;
-        playArea.gameObject.SetActive(true);
         playArea = null;
         _arPlaneManager.enabled = true;
         foreach (ARPlane plane in _arPlaneManager.trackables)
