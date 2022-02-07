@@ -12,7 +12,7 @@ These projects involve a process for creating a basic maze game withi
 It demonstrates understanding of how to move a character around obstacles, how to collect objects for points, a lives system, and how to use Unity's new input system along with creating GUI elements.
 The project is also built into a standalone app for Windows, Mac and Linux.
 
-<img src="https://i.imgur.com/s0ri6Je.png" width="100">
+<img src="https://i.imgur.com/s0ri6Je.png" width="600">
 
 (Projects 0x02 and 0x03 are in seperate repos)
 
