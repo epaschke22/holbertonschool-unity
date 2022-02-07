@@ -42,7 +42,7 @@ Project 0x0C explores an intractable slingshot game with assets that ap
 
 <img src="https://i.imgur.com/5AS1Imt.png" width="600">
 
-<img src="https://i.imgur.com/SV6AU34.jpg" width="600">
+<img src="https://i.imgur.com/SV6AU34.jpg" width="300">
 
 ## Shaders
 #### Project 0x0D
