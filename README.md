@@ -22,17 +22,27 @@ This series of projects goes more in depth to creating a basic game 
 Concepts like creating multiple scenes for menu options and games levels and how to correctly transition between them is covered. 
 This project also goes in depth on how to use Assets like textures, 3d models, rigged characters and animations, and sounds and music.
 
+<img src="https://i.imgur.com/DolcjBs.png" width="600">
+
 ## VR Apps
 #### Projects 0x0A and 0x0B
 These projects cover how to use XR foundation packages from unity to create VR Apps. 
 Project 0x0A shows off an intractable 360 video tour with multiple rooms.
 Project 0x0B  demonstrates a 3d scene to navigate in with intractables and a puzzle.
 
+<img src="https://i.imgur.com/R6p9coj.png" width="600">
+
+<img src="https://i.imgur.com/rJD1LgB.png" width="600">
+
 ## AR Apps
 #### Projects 0x09 and 0x0C
 Each of these projects cover how to use AR libraries such as Vuforia and AR foundation from unity. 
 Project 0x09  demonstrates an AR business card that animates to life with links to the card owner's Social Media channels. 
 Project 0x0C explores an intractable slingshot game with assets that appear on real world surfaces.
+
+<img src="https://i.imgur.com/5AS1Imt.png" width="600">
+
+<img src="https://i.imgur.com/SV6AU34.jpg" width="600">
 
 ## Shaders
 #### Project 0x0D
