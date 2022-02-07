@@ -1,0 +1,2 @@
+#ignore all build code for language stats
+**/Builds/** linguist-vendored
