@@ -29,6 +29,7 @@ public class SelectPlane : MonoBehaviour
 
     private ARRaycastManager _arRaycastManager;
     private ARPlaneManager _arPlaneManager;
+    private SlingshotBehavior slingshotBehavior;
     private Vector2 touchPosition;
     private static List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
@@ -49,6 +50,7 @@ public class SelectPlane : MonoBehaviour
     {
         _arRaycastManager = GetComponent<ARRaycastManager>();
         _arPlaneManager = GetComponent<ARPlaneManager>();
+        slingshotBehavior = GetComponent<SlingshotBehavior>();
     }
 
     // Update is called once per frame
@@ -75,7 +77,6 @@ public class SelectPlane : MonoBehaviour
 
     public void StartGame()
     {
-        debug3.color = Color.red;
         startButton.SetActive(false);
         initialTextPrompt.SetActive(false);
         foreach (ARPlane plane in _arPlaneManager.trackables)
@@ -85,13 +86,11 @@ public class SelectPlane : MonoBehaviour
                 plane.gameObject.SetActive(false);
             }
         }
-        debug3.color = Color.yellow;
         _navMeshSurface = playArea.GetComponent<NavMeshSurface>();
         _navMeshSurface.BuildNavMesh();
         playArea.gameObject.GetComponent<MeshRenderer>().enabled = false;
-        //playArea.gameObject.GetComponent<LineRenderer>().enabled = false;
+        playArea.gameObject.GetComponent<LineRenderer>().enabled = false;
         SpawnAI(numberOfTagets);
-        debug3.color = Color.green;
     }
 
     public void SpawnAI(int amount)
@@ -101,11 +100,11 @@ public class SelectPlane : MonoBehaviour
             Vector3 randomOffset = new Vector3(Random.Range(-0.1f, 0.1f), 0.05f, Random.Range(-0.1f, 0.1f));
             Instantiate(target, playArea.center + randomOffset, Quaternion.Euler(0, 0, 0));
         }
-        debug2.color = Color.green;
     }
 
     public void ResetGame()
     {
+        slingshotBehavior.Deactivate();
         tryAgainButton.SetActive(false);
         startButton.SetActive(false);
         scoreText.SetActive(false);

@@ -24,7 +24,10 @@ public class SlingshotBehavior : MonoBehaviour
     public GameObject ammoUI;
     public GameObject tryAgainButton;
     public ScoreTracking scoreUI;
+    public LineRenderer trajectoryRenderer;
+    public int lineSegmentCount = 20;
 
+    private List<Vector3> _linePoints = new List<Vector3>();
     GameObject ammoInst;
     int ammoCount = 7;
     public float power = 1f;
@@ -34,6 +37,7 @@ public class SlingshotBehavior : MonoBehaviour
 
     public void Activate()
 	{
+        gameActive = false;
         cameraHandleParent.gameObject.SetActive(true);
         cameraSlingParent.gameObject.SetActive(true);
         scoreUI.ScoreReset();
@@ -49,6 +53,7 @@ public class SlingshotBehavior : MonoBehaviour
         slingshotHandle.position = cameraHandleParent.position;
         slingshotHandle.rotation = cameraHandleParent.rotation;
         slingshotHandle.SetParent(cameraHandleParent, true);
+        DelayInput();
     }
 
     public async void DelayInput()
@@ -74,16 +79,15 @@ public class SlingshotBehavior : MonoBehaviour
     {
         if (gameActive == true)
 		{
-            debug4.color = Color.red;
             if (Input.touchCount > 0 && canPull == true && ammoCount > 0)
             {
                 Touch touch = Input.GetTouch(0);
+                DrawTrajectory(slingshotAimParent.position, ammoInst.GetComponent<Rigidbody>(), ammoSpawn.position);
                 // Handle finger movements based on TouchPhase
                 switch (touch.phase)
                 {
                     //When a touch has first been detected, change the message and record the starting position
                     case TouchPhase.Began:
-                        debug4.color = Color.yellow;
                         PlayArea = SelectPlane.playArea;
                         slingshotHandle.SetParent(PlayArea.transform, true);
                         break;
@@ -93,7 +97,7 @@ public class SlingshotBehavior : MonoBehaviour
                         break;
 
                     case TouchPhase.Ended:
-                        debug4.color = Color.green;
+                        trajectoryRenderer.positionCount = 0;
                         float dist = Vector3.Distance(slingshotAimParent.position, cameraSlingParent.position);
                         ammoCount -= 1;
                         ammoUI.GetComponent<AmmoUI>().UpdateAmount(ammoCount);
@@ -134,6 +138,30 @@ public class SlingshotBehavior : MonoBehaviour
         if (ammoCount > 0)
             ammoInst = Instantiate(Ammo, ammoSpawn);
 		else
+		{
+            gameActive = false;
             tryAgainButton.SetActive(true);
+        }
     }
+
+    void DrawTrajectory(Vector3 targetVector, Rigidbody rb, Vector3 startPoint)
+	{
+        Vector3 velocity = (targetVector / rb.mass) * Time.fixedDeltaTime;
+        float flightDuration = (2 * velocity.y) / Physics.gravity.y;
+        float stepTime = flightDuration / lineSegmentCount;
+        _linePoints.Clear();
+
+		for (int i = 0; i < lineSegmentCount; i++)
+		{
+            float stepTimePassed = stepTime * i;
+
+            Vector3 moveVector = new Vector3(velocity.x * stepTimePassed, velocity.y * stepTimePassed - 0.5f * Physics.gravity.y * stepTimePassed * stepTimePassed, velocity.z * stepTimePassed);
+
+            _linePoints.Add(-moveVector + startPoint);
+
+		}
+
+        trajectoryRenderer.positionCount = _linePoints.Count;
+        trajectoryRenderer.SetPositions(_linePoints.ToArray());
+	}
 }
