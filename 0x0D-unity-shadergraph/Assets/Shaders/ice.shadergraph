@@ -729,7 +729,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "18b1e93f103a4d9995dd8f9de69a9088",
     "m_Id": 0,
-    "m_DisplayName": "Color",
+    "m_DisplayName": "Base Color",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",

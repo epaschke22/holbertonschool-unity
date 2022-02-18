@@ -1392,7 +1392,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "4bd235d7387341a2b9e6e00f057e7311",
     "m_Id": 0,
-    "m_DisplayName": "Wave Frequency",
+    "m_DisplayName": "Wave Speed",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
