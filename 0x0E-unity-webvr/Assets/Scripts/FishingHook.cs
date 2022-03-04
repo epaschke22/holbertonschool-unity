@@ -6,7 +6,10 @@ public class FishingHook : MonoBehaviour
 {
     public GameObject[] fish;
 
-    GameObject currentFish = null;
+	public AudioSource splashCatch;
+	public AudioSource splashPlace;
+
+	GameObject currentFish = null;
 
 	private void OnTriggerEnter(Collider other)
 	{
@@ -15,12 +18,14 @@ public class FishingHook : MonoBehaviour
             int randomfish = Random.Range(0, fish.Length);
             currentFish = Instantiate(fish[randomfish], gameObject.transform.position, gameObject.transform.rotation);
 			currentFish.transform.parent = gameObject.transform;
+			splashCatch.Play();
 		}
 
         if (other.tag == "BucketZone" && currentFish != null)
 		{
             Destroy(currentFish);
             currentFish = null;
+			splashPlace.Play();
 		}
 	}
 }
