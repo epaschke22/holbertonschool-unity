@@ -17,18 +17,20 @@ The project is also built into a standalone app for Windows, Mac and
 (Projects 0x02 and 0x03 are in seperate repos)
 
 ## Platformer
-#### Projects 0x05 through 0x08
+#### Projects 0x05 through 0x08 and 0x0F
 This series of projects goes more in depth to creating a basic game in unity.
 Concepts like creating multiple scenes for menu options and games levels and how to correctly transition between them is covered. 
 This project also goes in depth on how to use Assets like textures, 3d models, rigged characters and animations, and sounds and music.
+Finally, the new input system is used and the movement keys can be rebound.
 
 <img src="https://i.imgur.com/DolcjBs.png" width="600">
 
 ## VR Apps
-#### Projects 0x0A and 0x0B
+#### Projects 0x0A and 0x0B and 0x0E
 These projects cover how to use XR foundation packages from unity to create VR Apps. 
 Project 0x0A shows off an intractable 360 video tour with multiple rooms.
-Project 0x0B  demonstrates a 3d scene to navigate in with intractables and a puzzle.
+Project 0x0B demonstrates a 3d scene to navigate in with intractables and a puzzle.
+Project 0x0E Shows off VR in a web demo with an interactive zen fishing mini game.
 
 <img src="https://i.imgur.com/R6p9coj.png" width="600">
 
